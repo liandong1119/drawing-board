@@ -1,0 +1,178 @@
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: inline-block;
+	margin: 0;
+	border: solid 2px black;
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	height: 6%;
+}
+
+.history {
+	flex: 1;
+}
+
+.tools {
+	margin: auto;
+	border: solid 1px beige;
+	/* 行内 */
+	display: inline-block;
+	/* 使边框看起来更为圆滑一些 */
+	border-radius: 10px;
+	display: flex;
+}
+
+.leftContent {
+	height: 100vh;
+	margin: 0;
+}
+
+#canvas {
+	background-color: antiquewhite;
+}
+
+.color {
+	margin: 0px;
+	padding-bottom: 0px;
+	/* 	height: 20px; */
+}
+
+.save {
+	background-image: url(../img/save.png);
+}
+
+.undo {
+	background-image: url(../img/undo_sel.png);
+}
+
+button.undo.active {
+	background-image: url(../img/undo.png);
+	border-color: transparent;
+}
+
+.recover {
+	background-image: url(../img/redo_sel.png);
+}
+
+button.recover.active {
+	background-image: url(../img/redo.png);
+}
+
+.arbitrary {
+	background-image: url(../img/arbitrary.png);
+}
+
+
+.line {
+	background-image: url(../img/line.png);
+}
+
+.circle {
+	background-image: url(../img/circle.png);
+}
+
+.rect {
+	background-image: url(../img/rect.png);
+}
+
+.triangle {
+	background-image: url(../img/triangle.png);
+}
+
+.eraser {
+	background-image: url(../img/eraser.png);
+}
+
+.clear {
+	background-image: url(../img/clear.png);
+}
+
+.thick {
+	background-image: url(../img/thick.png);
+}
+
+.fill {
+	background-image: url(../img/fill.png);
+}
+
+.stroke {
+	background-image: url(../img/stroke.png);
+}
+
+#shape {
+	margin: 6px;
+	border: solid 1px blanchedalmond;
+}
+
+.pen-color li {
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0rem;
+	cursor: pointer;
+}
+
+.pen-type li {
+	display: inline-block;
+}
+
+#thickness {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -1px;
+	margin-top: -1px;
+	background: #000;
+	border-radius: 50%;
+	transform-origin: center;
+}
+
+.history1 {
+	margin: 20px;
+	width: 90%;
+	height: 38%;
+	border: solid 2px black;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	/**
+	 * 垂直对齐方式，居中
+	 */
+	vertical-align: middle;
+}
+
+footer div {
+	display: inline-block;
+}
+
+.active {
+	color: blue;
+	font-weight: bold;
+}
+
+
+footer div {
+	cursor: pointer;
+}
+
+footer div:hover {
+	background-color: beige;
+}
